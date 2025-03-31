@@ -1,0 +1,65 @@
+SharingRideSystem created
+--------------------------------
+Driver name: John Doe is created with ID: 0
+--------------------------------
+Driver name: James T is created with ID: 1
+--------------------------------
+Rider name: Jane Doe is created with ID: 0
+--------------------------------
+StandardRide created with ID: 0
+Ride requested added for customer: Jane Doe
+Ride added to driver: John Doe
+Ride ID: 0
+Pickup: A
+Dropoff: B
+Distance: 10 miles
+Fare: $15
+--------------------------------
+Driver ID: 0
+Driver Name: John Doe
+Driver Rating: 10
+Assigned Rides: 1
+--------------------------------
+Rider ID: 0
+Rider Name: Jane Doe
+Requested Rides: 1
+--------------------------------
+PremiumRide created with ID: 1
+Ride requested added for customer: Jane Doe
+Ride added to driver: James T
+Ride ID: 1
+Pickup: C
+Dropoff: D
+Distance: 20 miles
+Fare: $60
+--------------------------------
+Driver ID: 1
+Driver Name: James T
+Driver Rating: 8
+Assigned Rides: 1
+--------------------------------
+Rider ID: 0
+Rider Name: Jane Doe
+Requested Rides: 2
+--------------------------------
+StandardRide created with ID: 2
+Ride requested added for customer: Jane Doe
+Ride added to driver: John Doe
+Ride ID: 2
+Pickup: E
+Dropoff: F
+Distance: 15 miles
+Fare: $22.5
+--------------------------------
+Driver ID: 0
+Driver Name: John Doe
+Driver Rating: 10
+Assigned Rides: 2
+--------------------------------
+Rider ID: 0
+Rider Name: Jane Doe
+Requested Rides: 3
+--------------------------------
+StandardRide created with ID: 3
+Error: No riders available in the queue.
+Error: Ride is not available
