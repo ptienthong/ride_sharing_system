@@ -1,36 +1,48 @@
-| system rider1 rider2 driver1 driver2 ride |
+Driver resetDriverCounter .
+Rider resetRiderCounter .
 
-"Create a ride-sharing system"
-system := SharingRideSystem new.
-
-"Create riders"
+"create rider and driver (global scope)"
 rider1 := Rider newRiderWithName: 'Alice'.
 rider2 := Rider newRiderWithName: 'Bob'.
 
-"Create drivers"
-driver1 := Driver newDriverWithName: 'John' rating: 5.
-driver2 := Driver newDriverWithName: 'Emily' rating: 4.
+driver1 := Driver newDriverWithName: 'John Doe' rating: 5. 
 
-"Add riders and drivers to the system"
-system addRider: rider1.
-system addRider: rider2.
-system addDriver: driver1.
-system addDriver: driver2.
+"add rider and driver to the system"
+system := SharingRideSystem newSystem .
 
-"Retrieve a rider and driver from the queue"
+"test 1: create a standard ride"
+system addDriver: driver1 .
+system addRider: rider1 .
+
+ride := system createRidePickup: 'Downtown' dropoff: 'Airport' distance: 10 rideType: 1.
+
+"get rider and driver from queue"
 rider := system getRider.
 driver := system getDriver.
 
-"Create a ride for the rider"
-ride := system createRidePickup: 'Downtown' dropoff: 'Mall' distance: 5 rideType: 1.
-
-"Rider requests the ride"
+"request ride and assign to driver"
 rider requestRide: ride.
-
-"Driver assigns the ride"
 driver addRide: ride.
 
-"View rider's requested rides"
-rider viewRides.
+"print driver info and view requested ride"
+rider viewRides .
+driver getDriverInfo .
 
 
+"test 2: create a premium ride"
+system addDriver: driver1 .
+system addRider: rider2 .
+
+ride := system createRidePickup: 'Downtown' dropoff: 'Airport' distance: 10 rideType: 2.
+
+"get rider and driver from queue"
+rider := system getRider.
+driver := system getDriver.
+
+"request ride and assign to driver"
+rider requestRide: ride.
+driver addRide: ride.
+
+"print driver info and view requested ride"
+rider viewRides .
+driver getDriverInfo .
