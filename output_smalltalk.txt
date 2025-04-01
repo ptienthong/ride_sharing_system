@@ -1,0 +1,48 @@
+Rider: Alice is created
+-----------------------------
+Rider: Bob is created
+-----------------------------
+Driver: John Doe is created
+-----------------------------
+SharingRideSystem created
+-----------------------------
+SharingRideSystem created
+-----------------------------
+Added driver to queue
+-----------------------------
+Added rider to queue
+-----------------------------
+Ride requested by rider: Alice
+-----------------------------
+Ride added to driver: John Doe
+-----------------------------
+[INFO] Rides requested by Alice:
+Ride ID: 9
+Pickup: Downtown
+Dropoff: Airport
+Distance: 10 miles
+Fare: $15.0
+[INFO] Driver ID: 2
+Name: John Doe
+Rating: 5
+Assigned Rides: 1
+-----------------------------
+Added driver to queue
+-----------------------------
+Added rider to queue
+-----------------------------
+Ride requested by rider: Bob
+-----------------------------
+Ride added to driver: John Doe
+-----------------------------
+[INFO] Rides requested by Bob:
+Ride ID: 10
+Pickup: Downtown
+Dropoff: Airport
+Distance: 10 miles
+Fare: $30.0
+[INFO] Driver ID: 2
+Name: John Doe
+Rating: 5
+Assigned Rides: 2
+-----------------------------
